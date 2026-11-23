@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Border and Margin</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .parent {
+            border: 1px solid gray;
+            margin-left: 40px;
+            padding: 15px;
+            width: 500px;
+        }
+
+        .child {
+            border: 1px solid red;
+            margin-left: inherit;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Use of the inherit value</h2>
+
+    <p>
+        Let the left margin be inherited from the parent element.
+    </p>
+
+    <div class="parent">
+
+        <p class="child">
+            This paragraph has an inherited left margin
+            from the parent element.
+        </p>
+
+    </div>
+
+</body>
+</html>

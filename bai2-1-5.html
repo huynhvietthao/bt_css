@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Div Border</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .outside {
+            border: 8px dotted blue;
+            border-radius: 30px;
+            padding: 20px;
+            width: 420px;
+        }
+
+        .middle {
+            border: 4px dashed red;
+            border-radius: 25px;
+            padding: 20px;
+        }
+
+        .inside {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 30px;
+            text-align: center;
+            font-family: Georgia;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Các kiểu định dạng khung viền</h2>
+
+    <div class="outside">
+
+        <div class="middle">
+
+            <div class="inside">
+                I am heavily packed
+                <br>
+                &lt;DIV&gt;
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

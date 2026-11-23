@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Border and Padding</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .box {
+            border: 1px solid red;
+            width: 300px;
+            margin-bottom: 15px;
+        }
+
+        .box1 {
+            padding: 0;
+        }
+
+        .box2 {
+            padding: 10px;
+        }
+
+        .box3 {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Border and Padding</h2>
+
+    <div class="box box1">
+        TH1: Phần tử div chỉ có width=300.
+    </div>
+
+    <div class="box box2">
+        TH2: Phần tử div có padding=10 và width=300.
+    </div>
+
+    <p>
+        Nhận xét: Div width=300 nhưng kích thước thực tế
+        lớn hơn do có padding.
+    </p>
+
+    <div class="box box3">
+        TH3: Bổ sung thuộc tính box-sizing vào.
+    </div>
+
+</body>
+</html>
